@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container">
+  <h2 class="spacing">{{ page.title }}</h2>
+  <div class="shade">s</div>
+
+  <div class="story-post">
+    <h2>
+      <center>{{page.subtitle}}</center>
+    </h2>
+    <p class="summary">
+      <span class="date">
+        {{ page.date | date: '%B %d, %Y' }}
+      </span>
+    </p>
+    {{ content }}
+  </div>
+</div>
